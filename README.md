@@ -34,9 +34,9 @@ Latest version passed.
 
 Implemented some unittests:
 
-    - normal integers               [Pass]
-    - big integers                  [Pass]
-    - negative integers and zero    [Can Handle]
-    - bad inputs                    [Can Handle]
+- normal integers               [Pass]
+- big integers                  [Pass]
+- negative integers and zero    [Can Handle]
+- bad inputs                    [Can Handle]
 
 ***test_sol.py***
