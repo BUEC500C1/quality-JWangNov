@@ -15,8 +15,27 @@ You are expected to use Github actively during this exercise.
 
 ## My Plans & Status
 
+
 ### Program Basic
+
 DONE.
 
+***MySolution.py***
+
+
 ### GitHub Action
-Built up workflows as Python Package
+
+Built up workflows as Python Package.
+
+Latest version passed.
+
+
+### Pytest
+
+Implemented some unittests:
+    - normal integers               [Pass]
+    - big integers                  [Pass]
+    - negative integers and zero    [Can Handle]
+    - bad inputs                    [Can Handle]
+
+***test_sol.py***
