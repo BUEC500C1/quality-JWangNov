@@ -17,6 +17,8 @@ def arabicToRoman(_num):
         return "IV"
     elif _num == 9:
         return "IX"
+    else:
+        return None
     """
     LOL this passed pytest & GitHub Action
     But I need to add more unittests before I merge...
