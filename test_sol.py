@@ -1,13 +1,13 @@
 from MySolution import arabicToRoman
 
-def test_atr_001():
+def test_atr_000():
+    """These are some normal numbers."""
+    assert arabicToRoman(1) == "I"
     assert arabicToRoman(3) == "III"
-
-def test_atr_002():
     assert arabicToRoman(4) == "IV"
-
-def test_atr_003():
     assert arabicToRoman(9) == "IX"
+    assert arabicToRoman(48) == "XLVIII"
+    assert arabicToRoman(999) == "CMXCIX"
 
-def test_atr_004():
-    assert arabicToRoman("HAHAHA") == None
+def test_atr_001():
+    pass

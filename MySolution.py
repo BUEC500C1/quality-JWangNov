@@ -1,54 +1,14 @@
 # Copyright 2020 JialunWANG wjl1996@bu.edu
 
-def arabicToRoman(_num):
-    # I created a branch for intentional mistakes :D
-    # return "Booooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
-
-    # Oh I'm sorry I know I cannot return booooo
-    # Now let me return "III"
-    # return "III"
-    # This can help me pass the first pytest
-
-    # The email told me that this branch's package runs failed... WAT?
-    # OK let me fix another test case
-    if _num == 3:
-        return "III"
-    elif _num == 4:
-        return "IV"
-    elif _num == 9:
-        return "IX"
-    else:
-        return None
-    """
-    LOL this passed pytest & GitHub Action
-    But I need to add more unittests before I merge...
-    """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def arabicToRoman(inputNum):
+    # Correct Evil
     try:
-        if not isinstance(_num, int):
-            raise TypeError(_num)
-        if _num <= 0:
-            raise BadInputValue(_num)
+        if not isinstance(inputNum, int):
+            raise TypeError(inputNum)
+        if inputNum <= 0:
+            raise BadInputValue(inputNum)
 
-        num = int(_num)
+        num = int(inputNum)
         arabic = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
         roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
         ans = ""
