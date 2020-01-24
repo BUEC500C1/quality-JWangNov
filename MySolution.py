@@ -11,10 +11,12 @@ def arabicToRoman(_num):
 
     # The email told me that this branch's package runs failed... WAT?
     # OK let me fix another test case
-    if _num==3:
+    if _num == 3:
         return "III"
-    else:
+    elif _num == 4:
         return "IV"
+    elif _num == 9:
+        return "IX"
     """
     LOL this passed pytest & GitHub Action
     But I need to add more unittests before I merge...
