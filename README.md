@@ -14,3 +14,5 @@ You are expected to use Github actively during this exercise.
 
 
 ## My Plans & Status
+### Program Basic
+DONE.
