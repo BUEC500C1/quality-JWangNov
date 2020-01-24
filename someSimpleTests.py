@@ -56,6 +56,13 @@ def _simpleTests():
     outRom = arabicToRoman(inAra)
     print("    The output roman number is:", outRom)
 
+    inAra = 123456
+    serial += serialStep
+    print("\n[ Test case", serial, "]")
+    print("    The input arabic number is:", inAra)
+    outRom = arabicToRoman(inAra)
+    print("    The output roman number is:", outRom)
+
 
 
 if __name__ == '__main__':

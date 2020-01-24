@@ -1,7 +1,6 @@
 # Copyright 2020 JialunWANG wjl1996@bu.edu
 
 def arabicToRoman(inputNum):
-    # Correct Evil
     try:
         if not isinstance(inputNum, int):
             raise TypeError(inputNum)
