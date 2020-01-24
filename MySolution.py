@@ -1,13 +1,14 @@
 # Copyright 2020 JialunWANG wjl1996@bu.edu
 
-def arabicToRoman(_num):
+def arabicToRoman(inputNum):
+    # Correct Evil
     try:
-        if not isinstance(_num, int):
-            raise TypeError(_num)
-        if _num <= 0:
-            raise BadInputValue(_num)
+        if not isinstance(inputNum, int):
+            raise TypeError(inputNum)
+        if inputNum <= 0:
+            raise BadInputValue(inputNum)
 
-        num = int(_num)
+        num = int(inputNum)
         arabic = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
         roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
         ans = ""
