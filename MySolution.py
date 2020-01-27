@@ -4,7 +4,7 @@ def arabicToRoman(inputNum):
     try:
         if not isinstance(inputNum, int):
             raise TypeError(inputNum)
-        if inputNum <= 0:
+        if inputNum <= 0 or inputNum >= 4000:
             raise BadInputValue(inputNum)
 
         num = int(inputNum)
