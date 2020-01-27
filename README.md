@@ -36,6 +36,7 @@ Implemented some unittests:
 
 - normal integers               [Pass]
 - big integers                  [Pass]
+- integers which are too big    [Can Handle]
 - negative integers and zero    [Can Handle]
 - bad inputs                    [Can Handle]
 
