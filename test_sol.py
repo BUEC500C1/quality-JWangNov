@@ -17,11 +17,15 @@ def test_atr_001():
     assert arabicToRoman(1996) == "MCMXCVI"
     assert arabicToRoman(2020) == "MMXX"
     assert arabicToRoman(3456) == "MMMCDLVI"
-    assert arabicToRoman(49859) == "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMDCCCLIX"
-    assert arabicToRoman(123456) == "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMCDLVI"
 
 
 def test_atr_002():
+    """These are some integers which are way too big."""
+    assert arabicToRoman(49859) == -1
+    assert arabicToRoman(123456) == -1
+
+
+def test_atr_003():
     """These are negative integers and zero."""
     assert arabicToRoman(0) == -1
     assert arabicToRoman(-1) == -1
@@ -33,7 +37,7 @@ def test_atr_002():
     assert arabicToRoman(-999999999999) == -1
 
 
-def test_atr_003():
+def test_atr_004():
     """These are some bad inputs."""
     assert arabicToRoman(1.1) == -2
     assert arabicToRoman(0.888888) == -2
